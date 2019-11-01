@@ -1,0 +1,99 @@
+
+@media screen and (min-width: 950px) and
+(max-width: 1000000px) {
+  .menu-icon{
+    display: none!important;
+  }
+}
+
+@media screen and (max-width: 950px)
+and (min-width: 0px){
+  .menu-icon{
+    display: block;
+  }
+  .dashboard{
+    overflow: hidden;
+    width: 0%;
+  }
+
+  .informationhub{
+    overflow-y: auto;
+    width: 98%;
+    color: #000;
+    height: 98%;
+    position: relative;
+  }
+}
+@media screen and (max-width: 514px)
+and (min-width: 0px) {
+  .informationhub-row{
+    height: 600px;
+    border-bottom: 1px solid #000;
+    overflow-y: auto;
+  }
+  .img-container{
+    height: auto;
+  }
+  .fifty{
+    width: 100%;
+  }
+  .box-2{
+    width: 95%;
+    padding: 10px 0px;
+  }
+
+}
+
+@media screen and (max-width: 800) and
+(min-width: 1px){
+  .informationhub{
+      position: absolute!important;
+      right: 0!important;
+  }
+
+@media screen and (max-width: 745px)
+and (min-width: 0px){
+  .informationhub-row{
+    height: auto;
+  }
+  .info-contents ul{
+    overflow: hidden;
+    overflow-y: auto;
+    height: auto;
+  }
+  .width-745px{
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 335px)
+and (min-width: 0px) {
+  .login-input,.login-btn{
+    width: 300px!important;
+  }
+}
+
+/* WARNING: NEW REVISED */
+@media screen and (max-width: 600px) and
+(min-width: 0px){
+  .informationhub-row{
+    height: auto;
+  }
+
+  /*
+  Make Informationhub row be without height
+  change width to 100% (Img Container and )
+
+  */
+
+  .fifty{
+    width: 100%!important;
+  }
+}
+
+@media screen and (max-width: 600px)
+and (min-width: 0px){
+  .fifty{
+    width: 100%;
+  }
+}

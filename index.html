@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ETF'S BUSINESS | PROPERTY MANAGEMENT AND DEVELOPMENT ASSISTANT</title>
+
+    <!-- WARNING: Personal links-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="css/master.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  </head>
+  <body>
+
+    <!-- WARNING: LOGIN CONTAINER -->
+    <div class="login-box">
+      <div class="center-box">
+        <div class="brand">
+          <span class="brand_name">ETF'S BUSINESS</span>
+          <hr>
+          <span class="brand_subtitle">Property Management & Development Assistant</span>
+        </div>
+
+        <div class="login-input-box">
+          <input class="login-input" type="text" name="" placeholder="Enter code ..." autofocus>
+          <button class="login-btn" type="submit" name="button" onclick="loginValidate()">Access Your Account <i class="fa fa-spinner fa-spin login-loader"></i> </button>
+          <div class="loaders">
+            <i class="fa fa-spinner fa-spin"></i>
+          </div>
+        </div>
+      </div >
+    </div>
+
+    <!-- WARNING: ACCOUNTS -->
+    <div class="admin-account">
+      <i class="menu-icon fa fa-bars" onclick="menu_display();"></i>
+      <i class="menu-close fa fa-times" onclick="menu_close();" style="color: #fff"></i>
+      <!-- WARNING: DASHBOARD CONTROLS BOX (LEFT FLOAT)-->
+      <div class="dashboard float-left">
+        <span class="dashboard-name">Dashboard</span>
+        <div class="menu-holder">
+          <a  class="properties-btn adjinganor-btn" onclick="adjinganor_land();">Adjinganor <i></i> </a>
+          <a  class="properties-btn dawenya-btn">Dawenya</a>
+          <a  class="properties-btn c25-btn">C25 - Peace be</a>
+        </div>
+      </div>
+      <!-- //: DASHBOARD CONTROLS BOX (LEFT FLOAT)-->
+
+      <!-- WARNING: INFORMATION HUB (RIGHT FLOAT) -->
+      <div class="informationhub float-left">
+        <div class="completed-events properties adjinganor-hub">
+          <span class="informationhub-name">Completed: <i> </i> </span>
+
+          <hr>
+
+          <div class="informationhub-row">
+            <span class="img-container float-left fifty width-745px">
+              <img src="img/zaab/wall.jpg" alt="ETFS BUSINESS">
+            </span>
+            <span class="info-contents fifty width-745px">
+              <span class="info-title" id="info-wall-title"></span>
+              <span class="info-total" id="info-wall-total">10,100.50</span>
+              <hr>
+              <ul>
+                <li>
+                  <span class="div-box-2 transaction-name" id="transaction-believer-zaab"></span>
+                  <span class="div-box-2 transaction-cost" id="transaction-believercost-zaab"></span>
+                  <div class="transaction-date" id="transaction-believerdate-zaab"> </div>
+                </li>
+
+                <li>
+                  <span class="div-box-2 transaction-name" id="transaction-wall-zaab"></span>
+                  <span class="div-box-2 transaction-cost" id="transaction-wallcost-zaab">; </span>
+                  <div class="transaction-date" id="transaction-walldate-zaab"> </div>
+                </li>
+
+                <li>
+                  <span class="div-box-2 transaction-name" id="transaction-gutter-zaab"></span>
+                  <span class="div-box-2 transaction-cost" id="transaction-guttercost-zaab"></span>
+                  <div class="transaction-date" id="transaction-gutterdate-zaab"> </div>
+                </li>
+
+                <li>
+                  <span class="div-box-2 transaction-name" id="transaction-wallfoundation-zaab"></span>
+                  <span class="div-box-2 transaction-cost" id="transaction-wallfoundationcost-zaab"></span>
+                  <div class="transaction-date" id="transaction-wallfoundationdate-zaab"> </div>
+                </li>
+
+                <li>
+                  <span class="div-box-2 transaction-name" id="transaction-sand-zaab"></span>
+                  <span class="div-box-2 transaction-cost" id="transaction-sandcost-zaab">&#x20B5; 1600.00</span>
+                  <div class="transaction-date" id="transaction-sanddate-zaab"> </div>
+                </li>
+
+                <li>
+                  <span class="div-box-2 transaction-name" id="transaction-stone-zaab"></span>
+                  <span class="div-box-2 transaction-cost" id="transaction-stonecost-zaab">&#x20B5; 1600.00</span>
+                  <div class="transaction-date" id="transaction-stonedate-zaab"> </div>
+                </li>
+
+                <li>
+                  <span class="div-box-2 transaction-name" id="transaction-cement-zaab"></span>
+                  <span class="div-box-2 transaction-cost" id="transaction-cementcost-zaab">&#x20B5; 1600.00</span>
+                  <div class="transaction-date" id="transaction-cementdate-zaab"> </div>
+                </li>
+
+                <li>
+                  <span class="div-box-2 transaction-name" id="transaction-board-zaab"></span>
+                  <span class="div-box-2 transaction-cost" id="transaction-boardcost-zaab"></span>
+                  <div class="transaction-date" id="transaction-boarddate-zaab"> </div>
+                </li>
+
+                <li>
+                  <span class="div-box-2 transaction-name" id="transaction-block5-zaab"></span>
+                  <span class="div-box-2 transaction-cost" id="transaction-block5cost-zaab"></span>
+                  <div class="transaction-date" id="transaction-block5date-zaab"> </div>
+                </li>
+
+                <li>
+                  <span class="div-box-2 transaction-name" id="transaction-block6-zaab"></span>
+                  <span class="div-box-2 transaction-cost" id="transaction-block6cost-zaab"></span>
+                  <div class="transaction-date" id="transaction-block6date-zaab"> </div>
+                </li>
+
+                <li>
+                  <span class="div-box-2 transaction-name" id="transaction-capinter-zaab"></span>
+                  <span class="div-box-2 transaction-cost" id="transaction-capintercost-zaab"></span>
+                  <div class="transaction-date" id="transaction-capinterdate-zaab"> </div>
+                </li>
+
+                <li>
+                  <span class="div-box-2 transaction-name" id="transaction-pipelinefix-zaab"></span>
+                  <span class="div-box-2 transaction-cost" id="transaction-pipelinefixcost-zaab"></span>
+                  <div class="transaction-date" id="transaction-pipelinefixdate-zaab"> </div>
+                </li>
+
+                <li>
+                  <span class="div-box-2 transaction-name" id="transaction-waterpump-zaab"></span>
+                  <span class="div-box-2 transaction-cost" id="transaction-waterpumpcost-zaab"></span>
+                  <div class="transaction-date" id="transaction-waterpumpdate-zaab"> </div>
+                </li>
+
+                <li>
+                  <span class="div-box-2 transaction-name" id="transaction-ross-zaab"></span>
+                  <span class="div-box-2 transaction-cost" id="transaction-rosscost-zaab"></span>
+                  <div class="transaction-date" id="transaction-rossdate-zaab"> </div>
+                </li>
+              </ul>
+            </span>
+          </div>
+        </div>
+
+        <div class="currents-and-obligations adjinganor-hub">
+          <span class="box-2 float-left">
+            <p>Today's Transactions <i id="date"></i> </p>
+            <hr>
+            <br>
+            <ul>
+              <li> <span id="todays-transaction-name-0"></span> <span id="todays-transaction-cost-0"></span> </li>
+            </ul>
+          </span>
+          <br>
+          <span class="box-2 float-left">
+            <p>Available Balance</p>
+            <hr>
+            <br>
+            <ul>
+              <li id="available-balance">None</li>
+            </ul>
+          </span>
+          <span class="box-2 float-left">
+            <p>Recent Transactions  <i id="date"></i></p>
+            <hr>
+            <br>
+            <ul class="transaction-format">
+              <li> <span id="recent-transaction-name-0"></span><span id="recent-transaction-cost-0"></span> </li>
+            </ul>
+          </span>
+        </div>
+
+      </div>
+      <!-- //: INFORMATION HUB (RIGHT FLOAT) -->
+    </div>
+
+
+    <script type="text/javascript" src="js/login.js"></script>
+    <script type="text/javascript" src="js/developer.js"></script>
+    <script type="text/javascript" src="js/master.js"></script>
+  </body>
+</html>
