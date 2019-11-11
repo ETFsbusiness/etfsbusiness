@@ -4,6 +4,11 @@ m = n.getMonth() + 1;
 d = n.getDate();
 document.getElementById("date").innerHTML = d + "/" + m + "/" + y;
 
+
+// WARNING: AVAILABLE BALANCE
+document.getElementById("available-balance").innerHTML = "&#x20B5 930.00";
+
+
 document.getElementById("info-wall-title").innerHTML = "Wall";
 document.getElementById("info-wall-total").innerHTML = "&#x20B5; 17,725.00";
 
@@ -65,15 +70,24 @@ document.getElementById("transaction-rosscost-zaab").innerHTML = "&#x20B5; 800.0
 document.getElementById("transaction-rossdate-zaab").innerHTML = "10/10/19";
 
 
-// WARNING: AVAILABLE BALANCE
-document.getElementById("available-balance").innerHTML = "&#x20B5 3,581.00";
+
 
 document.getElementById("todays-transaction-name-0").innerHTML = "Capinter";
 document.getElementById("todays-transaction-name-0").innerHTML = "&#x20B5 400.00";
 
 document.getElementById("todays-transaction-name-0").innerHTML = "None";
-document.getElementById("todays-transaction-cost-0").innerHTML = "&#x20B5 0.00";
+document.getElementById("todays-transaction-cost-0").innerHTML = "...";
+
 
 // WARNING: RECENT TRANSACTION
-document.getElementById("recent-transaction-name-0").innerHTML = "None";
-document.getElementById("recent-transaction-cost-0").innerHTML = "&#x20B5; 0.00";
+document.getElementById("recent-transaction-name-0").innerHTML = "Roofing Sheet (#11)";
+document.getElementById("recent-transaction-cost-0").innerHTML = "&#x20B5; 220.00";
+
+document.getElementById("recent-transaction-name-1").innerHTML = "Transport";
+document.getElementById("recent-transaction-cost-1").innerHTML = "&#x20B5; 31.00";
+
+document.getElementById("recent-transaction-name-2").innerHTML = "Sis Efe";
+document.getElementById("recent-transaction-cost-2").innerHTML = "&#x20B5; 1000.00";
+
+document.getElementById("recent-transaction-name-3").innerHTML = "Fees";
+document.getElementById("recent-transaction-cost-3").innerHTML = "&#x20B5; 1400.00";
